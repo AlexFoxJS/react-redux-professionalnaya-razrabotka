@@ -1,12 +1,15 @@
 import React from 'react'
 
 import TodoListItem from './../TodoListItem'
-
-const itemsList = ['Test_1', 'Test_2', 'Test_3', 'Test_4', 'Test_5'];
+import {itemsList} from './mock'
 
 const TodoList = () => (
 	<ul>
-		{itemsList.map(item => <li><TodoListItem /></li>)}
+		{itemsList.map(({label, important}, i) => (
+			<li key={i}>
+				<TodoListItem label={label} important={important} />
+			</li>
+		))}
 	</ul>
 );
 
