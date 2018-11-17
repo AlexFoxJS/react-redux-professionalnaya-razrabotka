@@ -1,8 +1,8 @@
 import React from 'react'
 
-import TodoList from '../../components/TodoList/TodoList'
-import SearchPanel from '../../components/SearchPanel/SearchPanel'
-import AppHeader from '../../components/AppHeader/AppHeader'
+import TodoList from '../../components/TodoList'
+import SearchPanel from '../../components/SearchPanel'
+import AppHeader from '../../components/AppHeader'
 
 import {itemsList} from '../../components/mock'
 

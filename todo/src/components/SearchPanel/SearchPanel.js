@@ -1,6 +1,8 @@
 import React from 'react'
 import './SearchPanel.css'
 
+import ItemStatusFilter from '../ItemStatusFilter'
+
 const SearchPanel = () => (
 	<div className="searchPanel d-flex">
 
@@ -10,29 +12,7 @@ const SearchPanel = () => (
 			type="text"
 		/>
 
-		<div className="btn-group">
-			<button
-				type="button"
-				className="btn btn-info"
-			>
-				All
-			</button>
-
-			<button
-				type="button"
-				className="btn btn-outline-secondary"
-			>
-				Active
-			</button>
-
-			<button
-				type="button"
-				className="btn btn-outline-secondary"
-			>
-				Done
-			</button>
-
-		</div>
+		<ItemStatusFilter />
 
 	</div>
 );
