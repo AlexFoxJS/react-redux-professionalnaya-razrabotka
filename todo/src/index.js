@@ -9,12 +9,15 @@ const SearchPanel = () => (
 	<input placeholder="search" type="text"/>
 );
 
-const TodoList = () => (
-	<ul>
-		<li>Learn React</li>
-		<li>Build Awesome app</li>
-	</ul>
-);
+const TodoList = () => {
+	const itemsList = ['Test_1', 'Test_2', 'Test_3', 'Test_4', 'Test_5'];
+
+	return (
+		<ul>
+			{itemsList.map(item => <li>{item}</li>)}
+		</ul>
+	)
+};
 
 const App = () => (
 	<div>
