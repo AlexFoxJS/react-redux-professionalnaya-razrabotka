@@ -1,0 +1,7 @@
+@import "../../../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.app {
+  margin: 2rem auto 0 auto;
+  max-width: 500px;
+}
