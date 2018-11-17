@@ -9,15 +9,15 @@ export default class TodoListItem extends Component {
 	};
 
 	clickOnLabel = () => {
-		this.setState({
-			done: true
-		})
+		this.setState(({done}) => ({
+			done: !done
+		}))
 	};
 
 	onMarkImportant = () => {
-		this.setState({
-			important: true
-		})
+		this.setState(({important}) => ({
+			important: !important
+		}))
 	};
 
 	render() {
