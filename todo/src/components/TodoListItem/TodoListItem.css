@@ -7,18 +7,18 @@
   margin: 3px;
 }
 
-.todoListItem-label {
+.todoListItemLabel {
   margin-left: 1.25rem;
   line-height: 35px;
   cursor: pointer;
   user-select: none;
 }
 
-.todoListItem.done .todoListItem-label {
+.todoListItem.done .todoListItemLabel {
   text-decoration: line-through;
 }
 
-.todoListItem.important .todoListItem-label {
+.todoListItem.important .todoListItemLabel {
   font-weight: bold;
   color: steelblue;
 }
