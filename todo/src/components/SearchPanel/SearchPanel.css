@@ -1,0 +1,9 @@
+.searchPanel {
+  margin: 1rem 0;
+}
+
+.searchPanel .search-input {
+  width: auto;
+  flex-grow: 1;
+  margin-right: 3px;
+}
