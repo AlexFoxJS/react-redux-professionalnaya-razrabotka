@@ -1,4 +1,4 @@
-export const itemsList = [
+export const todoData = [
 	{
 		id: 1,
 		label: 'Test_1',
