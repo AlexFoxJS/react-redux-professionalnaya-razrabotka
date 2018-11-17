@@ -3,10 +3,10 @@ import './TodoList.css'
 
 import TodoListItem from '../TodoListItem'
 
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos, onDeleted }) => {
 	const items = todos.map(item => (
 		<li className="list-group-item" key={item.id}>
-			<TodoListItem {...item} />
+			<TodoListItem {...item} onDeleted={() => onDeleted(item.id)} />
 		</li>
 	));
 

@@ -12,7 +12,7 @@ const App = () => (
 	<div className="app">
 		<AppHeader />
 		<SearchPanel />
-		<TodoList todos={itemsList} />
+		<TodoList todos={itemsList} onDeleted={id => console.log('Delete item by id:', id)} />
 	</div>
 );
 
